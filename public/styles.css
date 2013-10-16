@@ -1,0 +1,49 @@
+body {
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#start-wrapper {
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#advanced-search {
+	float:right;
+}
+
+#advanced-search select {
+	padding:3px 0px 3px 0px;
+}
+
+table {
+	width:900px;
+}
+
+table td {
+	width:180px;
+}
+
+h1 {
+	text-align:center;
+	color:black;
+	font-size:26px;
+	font-weight: bold;
+}
+
+.find {
+	width:580px;
+	height:25px;
+}
+
+.submit {
+	width:80px;
+	padding:3px;
+	float:right;
+}
+
+form {
+	background-color: white;
+}

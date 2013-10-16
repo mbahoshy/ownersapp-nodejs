@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="/styles.css" rel="stylesheet" type="text/css"  />
+</head>
+<body>
+	<h1>Search results for model #: <%= squery %></h1>
+<table>
+	<tr>
+		<th>Model #</th><th>Category</th><th>Sub-Category</th><th>Link</th><th>Edit</th>
+	</tr>
+	<%	result.forEach(function(resultObj){	%>
+	<tr>
+		<td><%= resultObj.modelNumber %></td>
+		<td><%= resultObj.category %></td>
+		<td><%= resultObj.subcategory %></td>
+		<td><a href='<%= resultObj.link %>' target='_blank'><%= resultObj.link %></a></td>
+		<td><a href='/edit/<%= resultObj.manualid %>'>Edit</a></td>
+	</tr>
+	<%	})	%>
+</table>
+</body>
+</html>

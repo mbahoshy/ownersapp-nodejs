@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="/styles.css" rel="stylesheet" type="text/css"  />
+	<script src='/jquery.js'>
+	</script>
+</head>
+<body>
+	<div id='start-wrapper'>
+		<h1>Find your owner's manual</h1>
+
+		<form action='/modelSearch' method='post'>
+			<input class='find' type='text' name='model'	/>
+			<input class='submit' type='submit' value='Find'	/>
+	<div id='advanced-search'>
+			<label>Choose search category:</label>
+			<select name='searchtype' id='searchtype'>
+				<option value="modelNumber">Model Number</option>
+				<option value="category">Category</option>
+				<option value="subcategory">Sub-category</option>
+				<option value="link">Link</option>
+			</select>
+	</div>
+
+		</form>
+		<a href='/add'>Add manual</a>
+		<a href='/all'>Show all</a>
+		<a id='as' href='#'>Advanced Search</a>
+	</div>
+
+</body>
+</html>

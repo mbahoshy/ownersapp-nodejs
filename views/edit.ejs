@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="/styles.css" rel="stylesheet" type="text/css"  />
+</head>
+<body>
+	<form action='/update/<%= result[0].manualid %>' method='post'>
+		Model #:<br/>
+		<input type='text' name='modelnumber' value='<%= result[0].modelNumber %>'	/><br/>
+		Category:<br/>
+		<input type='text' name='category' value='<%= result[0].category %>'	/><br/>
+		Sub-category:<br/>
+		<input type='text' name='subcategory' value='<%= result[0].subcategory %>'	/><br/>
+		Link:<br/>
+		<input type='text' name='link' value='<%= result[0].link %>'	/><br/>
+		<input class='submit' type='submit' value='Update'	/>
+	</form>
+</body>
+</html>
